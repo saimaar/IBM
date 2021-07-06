@@ -2,11 +2,17 @@
 <html lang="en">
   <head>
     <script>
+
       function greet(){
         let name = document.querySelector('#name').value;
         alert('hello, ' + name)
       }
-      document.querySelector('form').addEventListener('submit', greet)
+      function listen(){
+        document.querySelector('form').addEventListener('submit', greet)
+      }
+
+       document.addEventListener('DOMContentloaded', listen)
+   
     </script>
     <title>
       search
